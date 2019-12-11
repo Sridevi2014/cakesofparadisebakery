@@ -1,0 +1,641 @@
+@font-face{
+	font-family:'HelveticaNeueLTStd45Light';
+	src:url('/site/helveticaneueltstd-lt-webfont.eot');
+	src:url('/site/helveticaneueltstd-lt-webfont.eot?#iefix') format('embedded-opentype'),url('/site/helveticaneueltstd-lt-webfont.woff') format('woff'),url('/site/helveticaneueltstd-lt-webfont.ttf') format('truetype'),url('/site/helveticaneueltstd-lt-webfont.svg#HelveticaNeueLTStd45Light') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+
+*, html {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: arial, times, Times New Roman, helvetica, sans-serif, tahoma, helvetica;
+	font-size: 12px;
+	background: #fff;
+	min-height: 100%;
+	font: 14px/28px 'HelveticaNeueLTStd45Light', Arial, Helvetica, sans-serif;
+}
+
+input, textarea {
+	font-family: arial, times, Times New Roman, helvetica, sans-serif, tahoma, helvetica;
+	font-size: 12px;
+}
+
+div:active, a:active
+{
+	outline: none;
+}
+
+div:focus, a:focus
+{
+	-moz-outline-style: none;
+	outline: none;
+}
+
+a, img, a img {
+	border: none;
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 22px;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	
+}
+
+p {
+	margin-bottom: 1em;
+	line-height: 22px;
+}
+
+h1 {
+	
+}
+
+/***** Useful Classes *****/
+
+.Left {
+	float: left;
+}
+
+.Right {
+	float: right;
+}
+
+.Clear {
+	clear: both; 
+	float: none;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 1px; /* for Gecko based browsers */
+	margin-bottom: -1px; /* for Gecko based browsers */
+	height: 0;
+}
+
+.Line {
+	text-align: center;
+}
+
+.Error {
+	color: #990000;
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+
+.ErrorBox {
+	margin: 0 10px;
+}
+
+#Error {
+	color: #990000;
+}
+
+#Error input, #Error select, #Error textarea{
+	border: 1px solid #990000;
+	padding: 5px;
+}
+
+.NoShow {
+	display: block;
+	height: 1px;
+	visibility: hidden;
+}
+
+/***** Layout *****/
+
+#Wrapper {
+	width: 1080px;
+	margin: 0 auto;
+	min-height: 100%;
+}
+
+#Header {
+	margin-bottom: 10px;
+	width: 1080px; overflow:hidden;
+	/*height: 175px;*/
+	position: relative; 
+/*
+	background: url(/site/final-website-header.png) top left no-repeat;
+*/
+}
+
+#Header object {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1080px;
+}
+
+#Header #Logo img {
+	height: 126px;
+	max-width: 600px;
+}
+
+#Header #Text {
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 18px;
+	text-align: right;
+	display: block;
+}
+
+#Header #Nav {
+	width: 1080px;
+	padding: 5px 0;
+	margin: 5px auto;
+	text-align: center;
+	position: relative;
+	/*top: 130px;*/
+}
+
+#Header #Nav a {
+	display: inline-block;
+	padding: 0 20px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: center;
+	color: #000;
+}
+
+#Header .Social {
+	width: 100px;
+	height: 28px;
+	position: absolute;
+	bottom: 4px;
+	right: 68px;
+}
+
+#Header .Social .FB {
+	width: 26px;
+	height: 26px;
+	display: block;
+	background: url(/site/facebook-color.png) center center no-repeat;
+	position: absolute;
+	left: 37px;
+	top: 0;
+}
+
+#Header .Social .Instagram {
+	width: 26px;
+	height: 26px;
+	display: block;
+	background: url(/site/instagram-color.png) center center no-repeat;
+	position: absolute;
+	left: 0	;
+	top: 0;
+}
+
+#Header .Social .Yelp {
+	width: 26px;
+	height: 26px;
+	display: block;
+	background: url(/site/yelp-color.png) center center no-repeat;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+#Header .Social div:hover {
+	cursor: pointer;
+}
+
+.NavBG {
+	height: 42px;
+	display: block;
+	position: absolute;
+	top: 140px;
+	width: 100%;
+	background: #F37E6F;
+}
+
+#Header #Nav a:first-child {
+	margin-left: 0;
+	border: 0;
+}
+
+#Footer {
+	position: relative;
+	line-height: 20px;
+	/*height: 98px;*/
+	padding-top: 10px;
+/*	margin-top: -110px;*/
+	background: #65BD42; overflow:hidden;
+}
+
+#Footer .Wrapper {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+#Footer #Nav {
+	width: 1080px;
+	padding: 5px 0;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+#Footer #Nav a {
+	display: inline-block;
+	padding: 0 35px;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	border-left: 1px solid #000;
+	margin-left: -4px;
+	color: #000;
+}
+
+#Footer #Nav a:first-child {
+	margin-left: 0;
+	border: 0;
+}
+
+#Footer .Facebook {
+	position: absolute;
+	right: 10px;
+}
+
+#Footer .Facebook img {
+	position: relative;
+	top: 5px;
+}
+
+#Footer #Credit {
+	height: 25px;
+	display: block;
+	overflow: hidden;
+}
+
+#Content {
+	
+}
+
+/*#Content .Padding {
+	height: 100px;
+	display: block;
+}*/
+
+/* Home */
+
+#Banner {
+	position: relative;
+	width: 1500px;
+	height: 1000px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+#Banner .Banner {
+	display: none;
+	position: absolute;
+}
+
+.Title {
+	text-align: left;
+	font-size: 20px;
+	padding: 8px;
+	padding-left: 0;
+}
+
+.SubTitle {
+	color: #2d2d2d;
+	text-transform: uppercase;
+	font-size: 16px;
+	margin-bottom: 25px;
+}
+
+.Hours div {
+	width: 350px;
+	margin-left:0px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.Hours .Seattle {
+	/*padding-left: 110px;
+	margin-right: 200px;*/
+    padding-bottom:25px;
+}
+
+.Hours .SubTitle {
+	margin: 0;
+	border-bottom: 1px solid #ccc;
+	width: 260px;
+	margin-bottom: 10px;
+}
+
+.Hours p {
+	padding: 0;
+	margin: 0;
+}
+
+.Gallery {
+	text-align: center;
+    margin: 30px 15px;
+}
+
+.Gallery a.gallery {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	margin: 5px;
+	display: inline-block;
+}
+
+.Gallery a.gallery img {
+	height: 200px;
+	width: 200px;
+	display: block;
+}
+
+.ContactForm {
+	display: block;
+	width:100%;
+	margin-bottom: 20px;
+}
+
+.ContactForm #Error {
+	text-align: center;
+}
+
+.ContactForm .Label {
+	display: inline-block;
+	width: 200px;
+	vertical-align: top;
+}
+
+.ContactForm .Field {
+	margin-bottom: 10px;
+	display: inline-block;
+	vertical-align: top; width:100%;
+}
+
+.ContactForm .Field input {
+	height:40px;
+	width:100%;
+	box-sizing: border-box; border: 1px solid #f2f2f2;
+	padding-left: 5px;
+}
+
+.ContactForm .Field textarea {
+	height: 160px;
+	padding: 5px;
+	line-height: 16px;  width:100%;
+	box-sizing: border-box; border: 1px solid #f2f2f2;
+}
+
+.ContactForm .Button {
+	text-align: left;
+	width:100%;
+}
+
+.ContactForm .Button .Send {	
+	background:#fc3ec6; padding:10px; color:#ffffff; border:0px; font-size:16px; cursor:pointer; width:20%;
+}
+
+.Projects {
+	display: inline-block;
+	width: 350px;
+	text-align: center;
+	margin: 3px;
+}
+
+.ProjectContainer {
+	display: block;
+	text-align: center;
+}
+
+.Credits {
+	/*margin-top: 15px; */background:#ffffff; padding:0px 0px 15px 0px;
+	text-align: center; clear:both;
+}
+
+.Contact {
+	width: 700px;
+}
+
+.Contact .ContactForm .Label {
+	width: 80px;
+}
+
+.Directions {
+	width: 96%;
+	margin-right: 38px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.Directions .Map {
+	margin-bottom: 20px;
+}
+
+.Location {
+	display: inline-block;
+	width: 300px;
+}
+
+.Location.Renton {
+	position: relative;
+	left: 200px;
+}
+
+.Email {
+	margin-bottom: 30px;
+}
+
+.Email a {
+	color: #000;
+}
+
+.Image {
+	display: inline-block;
+	width: 350px;
+	margin-right: 30px;
+	vertical-align: top;
+}
+
+.AboutContent {
+	display: inline-block;
+	width: 650px;
+	vertical-align: top;
+}
+
+#Cakes {
+	display: block;
+	margin-bottom: 30px;
+}
+
+.Cake {
+	display: inline-block;
+	width: 270px;
+	text-align: center;
+	vertical-align: top;
+	margin-bottom: 15px;
+}
+
+.Cake img {
+	border: 1px solid #000;
+	max-width: 250px;
+}
+
+.Cake a span.Name {
+	position: relative;
+	top: -10px;
+}
+
+.WedLeft {
+	width: 450px;
+	display: inline-block;
+	margin-right: 80px;
+	vertical-align: top;
+}
+
+.WeddingForm {
+	width: 545px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.WeddingForm .Label {
+	width: 80px;
+}
+
+.WeddingForm .Field input {
+	width:100%; box-sizing: border-box; border:1px solid #f2f2f2; padding:10px;
+}
+
+.WeddingForm .Button {
+	position: relative;
+	width: 100%; text-align:left;
+}
+
+.WeddingForm .Field textarea {
+	width:100%;
+}
+
+.OrderForm {
+	width: 545px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.OrderForm .Label {
+	min-width: 110px;
+	width: auto;
+}
+
+.OrderForm .Field input {
+	width:100%;
+}
+
+.OrderForm .Button {
+	position: relative;
+	right: 0;
+	width: 505px;
+}
+
+.OrderForm .Field textarea {
+	width:100%;
+}
+
+.OrderForm center.red {
+	color: #cc0000;
+	font-weight: bold;
+	font-size: 16px;
+}
+.OrderForm .Field select {width:100%; box-sizing: border-box; border:1px solid #f2f2f2; padding:10px;}
+
+.Item {
+	width: 450px;
+	display: inline-block;
+	margin-right: 80px;
+	vertical-align: top;
+}
+
+.Item .Photo {
+	text-align: center;
+}
+
+.Item .Photo img {
+	max-width: 450px;
+	max-height: 550px;
+}
+
+table {
+	border-collapse:collapse;
+}
+
+table td.Cake {
+	border: 1px solid #F37E6F;
+	margin: -1px;
+	display: table-cell;
+	padding-top: 10px;
+	vertical-align: top;
+}
+
+#Notice {
+	color: #cc0000;
+	font-size: 20px;
+	font-weight: bold;
+        padding:15px 0;   
+}
+.toggleMenu {display:none; padding:10px 15px; clear:both; color:#5f5f5f; width:98%; margin:auto; font-size:18px; font-weight:bold; background:#f4f4f4;}
+a.toggleMenu {text-decoration:none;}
+
+.submitBtn{ background:#fc3ec6; padding:10px; color:#ffffff; border:0px; font-size:16px; cursor:pointer; width:20%;}
+.topcallDiv{padding:10px 0px; text-align:right; overflow:hidden; color:#333333; font-size:20px; font-weight:bold; max-width:1080px; min-width:320px; margin:auto;}
+
+@media screen and (max-width: 1080px) {
+#Wrapper { width:98%;}
+#Header { width:98%;}
+#Header #Nav { width:98%;}
+#Banner { width:98%; height:350px;}
+#Footer .Wrapper { width:98%;}
+#Footer #Nav { width:98%;}
+#Cakes table tr td { display:inline-block !important; width:100% !important; clear:both !important;}
+table td.Cake{ display:inline-block; width:100% !important; text-align:center;}
+}
+
+@media screen and (max-width: 767px) {
+#Header #Nav {display:none;}
+#Header #Nav a{ width:100%; clear:both; padding:10px 15px; text-align:left; border-top:1px dashed #999999;}
+.toggleMenu{ display:block;}
+#Footer #Nav a{width:100%; clear:both; padding:10px 15px; text-align:left; border-top:1px dashed #000000; border-left:0px;}
+.WedLeft{width:100%; margin-right:0px;}
+.WeddingForm{ clear:both; width:100%;}
+.Contact{ width:100%;}
+#Banner img{ width:100%;}
+.Item{width:100%; margin-right:0px;}
+.AboutContent {width: 100%;}
+
+
+}
+
+@media screen and (max-width: 640px) {
+.submitBtn{width:100%; text-align:center; font-weight:bold;}
+.ContactForm .Button .Send{width:100%; text-align:center; font-weight:bold;}
+.topcallDiv{text-align:center;}
+.OrderForm{ clear:both; width:100%;}
+.Item .Photo img{ width:100%;}
+.OrderForm .Field textarea{ width:100%;}
+.OrderForm .Button{ width:100%;}
+.OrderForm .Field input{width:100%;}
+
+}
+@media screen and (max-width: 480px) {
+#Banner {height:210px;}
+.Hours div { width:100%;}
+}
